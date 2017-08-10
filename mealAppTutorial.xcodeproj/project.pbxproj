@@ -14,6 +14,9 @@
 		620B262B1F38C48A001A5183 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620B26291F38C48A001A5183 /* LaunchScreen.storyboard */; };
 		620B26361F38C48A001A5183 /* mealAppTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620B26351F38C48A001A5183 /* mealAppTutorialTests.swift */; };
 		620B26411F38C48A001A5183 /* mealAppTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620B26401F38C48A001A5183 /* mealAppTutorialUITests.swift */; };
+		620B264F1F3A5720001A5183 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620B264E1F3A5720001A5183 /* RatingControl.swift */; };
+		627CE9101F3B69AE00DD8592 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627CE90F1F3B69AE00DD8592 /* Meal.swift */; };
+		627CE9121F3CB9B700DD8592 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627CE9111F3CB9B700DD8592 /* MealTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		620B263C1F38C48A001A5183 /* mealAppTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mealAppTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		620B26401F38C48A001A5183 /* mealAppTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealAppTutorialUITests.swift; sourceTree = "<group>"; };
 		620B26421F38C48A001A5183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		620B264E1F3A5720001A5183 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		627CE90F1F3B69AE00DD8592 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		627CE9111F3CB9B700DD8592 /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,10 @@
 			children = (
 				620B26201F38C48A001A5183 /* AppDelegate.swift */,
 				620B26221F38C48A001A5183 /* ViewController.swift */,
+				620B264E1F3A5720001A5183 /* RatingControl.swift */,
+				627CE90F1F3B69AE00DD8592 /* Meal.swift */,
 				620B26241F38C48A001A5183 /* Main.storyboard */,
+				627CE9111F3CB9B700DD8592 /* MealTableViewCell.swift */,
 				620B26271F38C48A001A5183 /* Assets.xcassets */,
 				620B26291F38C48A001A5183 /* LaunchScreen.storyboard */,
 				620B262C1F38C48A001A5183 /* Info.plist */,
@@ -193,6 +202,7 @@
 				TargetAttributes = {
 					620B261C1F38C48A001A5183 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = JN8N3GBRX6;
 						ProvisioningStyle = Automatic;
 					};
 					620B26301F38C48A001A5183 = {
@@ -259,8 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627CE9101F3B69AE00DD8592 /* Meal.swift in Sources */,
 				620B26231F38C48A001A5183 /* ViewController.swift in Sources */,
+				620B264F1F3A5720001A5183 /* RatingControl.swift in Sources */,
 				620B26211F38C48A001A5183 /* AppDelegate.swift in Sources */,
+				627CE9121F3CB9B700DD8592 /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JN8N3GBRX6;
 				INFOPLIST_FILE = mealAppTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.mealAppTutorial;
@@ -426,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JN8N3GBRX6;
 				INFOPLIST_FILE = mealAppTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.mealAppTutorial;
@@ -507,6 +522,7 @@
 				620B26471F38C48A001A5183 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		620B26481F38C48A001A5183 /* Build configuration list for PBXNativeTarget "mealAppTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +531,7 @@
 				620B264A1F38C48A001A5183 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		620B264B1F38C48A001A5183 /* Build configuration list for PBXNativeTarget "mealAppTutorialUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +540,7 @@
 				620B264D1F38C48A001A5183 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
