@@ -102,6 +102,19 @@ class MealTableViewController: UITableViewController {
     }
     */
     
+    //MARK: Actions
+    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as?
+            MealViewController, let meal = sourceViewController.meal {
+            
+            //Add a new meal.
+            let newIndexPath = IndexPath(row: meals.count, section: 0)
+            
+            meals.append(meal)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+    }
+    
     //MARK: Private Methods
     
     private func loadSampleMeals() {
@@ -121,23 +134,23 @@ class MealTableViewController: UITableViewController {
             fatalError("Unable to instantiate meal2")
         }
         
-        guard let meal3 = Meal(name: "Chicken and Potatoes", photo: photo3, rating: 5) else {
+        guard let meal3 = Meal(name: "Sopa de Arroz", photo: photo3, rating: 5) else {
             fatalError("Unable to instantiate meal3")
         }
         
-        guard let meal4 = Meal(name: "Chicken and Potatoes", photo: photo4, rating: 2) else {
+        guard let meal4 = Meal(name: "Spaggeti", photo: photo4, rating: 2) else {
             fatalError("Unable to instantiate meal4")
         }
         
-        guard let meal5 = Meal(name: "Chicken and Potatoes", photo: photo5, rating: 0) else {
+        guard let meal5 = Meal(name: "Ensalada", photo: photo5, rating: 0) else {
             fatalError("Unable to instantiate meal5")
         }
         
-        guard let meal6 = Meal(name: "Chicken and Potatoes", photo: photo6, rating: 5) else {
+        guard let meal6 = Meal(name: "Picadillo", photo: photo6, rating: 5) else {
             fatalError("Unable to instantiate meal6")
         }
         
-        guard let meal7 = Meal(name: "Chicken and Potatoes", photo: photo7, rating: 3) else {
+        guard let meal7 = Meal(name: "Sandwish", photo: photo7, rating: 3) else {
             fatalError("Unable to instantiate meal7")
         }
         
